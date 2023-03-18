@@ -1,4 +1,4 @@
-## 90 Days of DSA Roadmap [![Build Status](https://travis-ci.org/nannou-org/guide.svg?branch=master)](https://github.com/Supsource/90DaysDSA)
+## 90 Days of DSA Roadmap 
 
 *Day 1 & 2 :*  Learn about space and time complexity. One of the most important part of programming is knowing the complexity of the code you writing.
 ##### Resources
