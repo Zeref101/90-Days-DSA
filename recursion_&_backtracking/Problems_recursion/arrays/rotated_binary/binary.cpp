@@ -5,6 +5,10 @@ using namespace std;
 
 int rotated_bindary_search(int arr[], int target, int start, int end, int mid)
 {
+    if (start > end)
+    {
+        return -1;
+    }
     if (arr[mid] == target)
     {
         return mid;
