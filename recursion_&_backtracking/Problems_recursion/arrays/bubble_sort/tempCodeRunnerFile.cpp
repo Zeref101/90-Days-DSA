@@ -9,9 +9,11 @@ int main()
     {
         for (int j = 0; j < (size - i); j++)
         {
-            if (arr[j] > arr[j + 1])
+            if (arr[i] > arr[j])
             {
-                swap(arr[j], arr[j + 1]);
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
