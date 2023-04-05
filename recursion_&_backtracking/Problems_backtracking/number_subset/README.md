@@ -1,3 +1,4 @@
+## CODE
 ```cpp
 #include <iostream>
 #include <vector>
@@ -38,6 +39,7 @@ int main()
     return 0;
 }
 ```
+## EXPLAINATION
 * In the backtrack function, we add an element to the subset vector by calling subset push_back(nums[i]) . This adds the i th element of the nums vector to the subset vector.
 
 * After we have explored all possible subsets that include the  i -th element, we want to remove it from the  subset  vector and try the next element. We do this by calling  subset.pop_back() , which removes the last element from the  subset  vector.

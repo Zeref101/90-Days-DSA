@@ -1,3 +1,4 @@
+## CODE
 ```cpp
 #include <iostream>
 using namespace std;
@@ -17,7 +18,7 @@ int partition(int arr[], int start, int end) {
     return i+1;
 }
 ```
-
+## EXPLAINATION
 * This function implements the partition step of the quicksort algorithm. It takes an array arr , a starting index start , and an ending index end.It selects the last element of the array as the pivot, and then partitions the array into two parts: elements smaller than the pivot and elements greater than the pivot. It returns the index of the pivot element after partitioning.
 
 ```cpp

@@ -1,7 +1,7 @@
-# DRY RUN/APPROACH
+## DRY RUN/APPROACH
 ![Recursion Tree](./Screenshot_2.png)
 
-# CODE
+## CODE
 ```cpp
 #include <iostream>
 #include <vector>
@@ -31,7 +31,7 @@ int main()
     return 0;
 }
 ```
-# EXPLAINATION
+## EXPLAINATION
 The code generates all permutations of a given vector of integers. It uses a recursive function called solve to generate the permutations, and stores them in a vector of vectors called ans.
 
 Here is a step-by-step explanation of how the code works:

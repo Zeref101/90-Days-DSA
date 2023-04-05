@@ -1,5 +1,6 @@
+## DRY RUN/APPROACH
 ![Recursion Tree](./Screenshot_1.png)
-
+## CODE
 ```cpp
 #include <iostream>
 #include <string>
@@ -37,6 +38,7 @@ int main()
     return 0;
 }
 ```
+## EXPLAINATION
 * The main function initializes a string "digits" that contains a series of digits (in this case, "23").
 
 * The code then initializes an empty vector "ans" to hold all possible combinations of letters generated from the digits in the input string.
