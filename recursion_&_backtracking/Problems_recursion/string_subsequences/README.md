@@ -1,4 +1,6 @@
+## DRY RUN/APPROACH
 ![Recursion tree](./abc_recursion.png)
+## CODE
 ```cpp
 #include <iostream>
 #include <string>
@@ -33,6 +35,7 @@ int main()
     return 0;
 }
 ```
+## EXPLAINATION
 This code generates all possible subsequences of a given string using recursion.
 * The function subsequents takes two arguments: a string str and a vector of strings arr . It first checks if the length of the string is zero. If it is, it adds an empty string to the vector and returns. Otherwise, it calls itself recursively with the substring of str starting from the second character and the same vector arr.
 
