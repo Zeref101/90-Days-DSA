@@ -16,6 +16,8 @@ void MazeSolve(vector<vector<int>> visited, vector<vector<int>> &m, int x, int y
     if (x == n - 1 && y == n - 1)
     {
         ans.push_back(path);
+        return;
+    }
         visited[x][y] = 1;
 
         // * DOWN
@@ -53,7 +55,7 @@ void MazeSolve(vector<vector<int>> visited, vector<vector<int>> &m, int x, int y
             path.pop_back();
         }
     }
-}
+
 
 int main()
 {
