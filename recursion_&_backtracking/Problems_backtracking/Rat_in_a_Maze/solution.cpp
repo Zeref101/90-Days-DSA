@@ -18,12 +18,8 @@ void MazeSolve(vector<vector<int>> visited, vector<vector<int>> &m, int x, int y
         ans.push_back(path);
         return;
     }
-<<<<<<< HEAD
     visited[x][y] = 1;
     // * DOWN
-=======
-        visited[x][y] = 1;
->>>>>>> 255b5962125b295269c0cbfeab97cfa25c679196
 
     int newx = x + 1;
     int newy = y;
@@ -60,7 +56,7 @@ void MazeSolve(vector<vector<int>> visited, vector<vector<int>> &m, int x, int y
         MazeSolve(visited, m, newx, newy, ans, path, 4);
         path.pop_back();
     }
-
+}
 
 int main()
 {
