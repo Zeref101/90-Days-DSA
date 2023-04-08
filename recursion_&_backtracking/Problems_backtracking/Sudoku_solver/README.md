@@ -83,6 +83,7 @@ int main()
 ```
 ## EXPLAINATION
 The code includes two functions: isSafe() and solve(), and a main function.
+### EXPLAINING isSafe function
 ```cpp
 bool isSafe(int row, int col, char val, vector<vector<char>> &sudoku, int n)
 {
@@ -113,6 +114,7 @@ bool isSafe(int row, int col, char val, vector<vector<char>> &sudoku, int n)
 * The function then checks if the value is already present in the same 3x3 sub-grid or not. To check this, it uses a formula that maps the cell's (row, col) position to its corresponding 3x3 sub-grid. If the value is already present in the same sub-grid, it means that the value cannot be placed in the current cell and thus, it returns false.
 
 * If the value is not present in the same row, column, or sub-grid, it means that the value can be safely placed in the current cell, and thus, the function returns true.
+### EXPLAINING solve() function
 ```cpp
 bool solve(vector<vector<char>> &board)
 {
