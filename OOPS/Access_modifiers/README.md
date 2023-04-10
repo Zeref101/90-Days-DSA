@@ -1,0 +1,9 @@
+Access modifiers are keywords in object-oriented programming that determine the level of access that other parts of the program have to certain class members. There are three access modifiers in C++: public, private, and protected.
+## PUBLIC:
+Public members are accessible from anywhere in the program. This means that any part of the program can access and modify public members of a class. Public members are typically used to represent the interface of a class, which is the set of methods and properties that other parts of the program can use to interact with the class.
+## PRIVATE:
+Private members are only accessible from within the class itself. This means that other parts of the program cannot access or modify private members of a class. Private members are typically used to represent the implementation details of a class, which are the methods and properties that are used internally by the class to perform its operations.
+## PROTECTED:
+Protected members are accessible from within the class itself and its subclasses. This means that other parts of the program cannot access or modify protected members of a class, but subclasses of the class can. Protected members are typically used to represent the shared implementation details of a class and its subclasses.
+
+Access modifiers are important because they help to enforce encapsulation, which is the principle of hiding the implementation details of a class from other parts of the program. Encapsulation helps to improve the maintainability and reliability of a program by reducing the complexity of its components and making it easier to modify and extend them over time.
