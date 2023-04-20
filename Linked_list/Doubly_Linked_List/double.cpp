@@ -14,10 +14,11 @@ public:
     }
 };
 
-void insertAtHead(Node*& head, int d) {
+void insertAtHead(Node*& head,Node *&tail, int d) {
     Node* newnode = new Node(d);
     if (head == NULL) {
         head = newnode;
+        tail = newnode;
     }
     else {
         newnode->next = head;
@@ -41,7 +42,7 @@ void insertAtTail(Node*& head, Node*& tail, int d) {
 
 void insertAtMid(Node*& head, Node*& tail, int position, int d) {
     if (position == 1) {
-        insertAtHead(head, d);
+        insertAtHead(head, tail, d);
         return;
     }
     Node* newnode = new Node(d);
@@ -85,12 +86,14 @@ void print(Node* head) {
 int main() {
     Node* head = NULL;
     Node* tail = NULL;
-    insertAtHead(head, 12);
+    insertAtHead(head,tail, 12);
     insertAtTail(head, tail, 14);
     insertAtMid(head, tail, 4, 16);
     insertAtMid(head, tail, 3, 18);
     cout << "Length of the list: " << length(head) << endl;
     cout << "Data in the list: ";
     print(head);
+    cout << "head: "<< head->data<< endl;
+    cout << "tail: "<< tail->data<< endl;
     return 0;
 }
