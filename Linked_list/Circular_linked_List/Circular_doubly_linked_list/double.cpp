@@ -18,7 +18,7 @@ class Node
     }
 };
 
-void insert(Node *&tail, int position, int d)
+void insert(Node *&head,Node *&tail, int position, int d)
 {
     if(position==1)
     {   
@@ -28,6 +28,7 @@ void insert(Node *&tail, int position, int d)
             tail = newnode;
             tail->next = tail;
             tail->prev = tail;
+            head = newnode;
         }
         else
         {
@@ -35,19 +36,21 @@ void insert(Node *&tail, int position, int d)
             tail->next->prev = newnode;
             tail->next = newnode;
             newnode->prev = tail;
+            head = newnode;
         }
     }
     else
     {
         Node *newnode = new Node(d);
         Node *temp = tail->next;
+        
         int count = 1;
         while(count < position-1)
         {
             temp = temp->next;
             count++;
         }
-        if(temp->next == tail)
+        if(temp->next == head)
         {
             newnode->next = temp->next;
             temp->next->prev = newnode;
@@ -66,22 +69,22 @@ void insert(Node *&tail, int position, int d)
 }
 void print(Node *&tail)
 {
-    Node *temp = tail;
-    cout << temp->data<<" ";
-    while(temp->next != tail)
+    Node *temp = tail->next;
+    do
     {
+        cout << temp->data << " ";
         temp = temp->next;
-        cout<<temp->data<<" ";  
-    }
+    } while (temp != tail->next);
     cout << endl;
 }
 int main()
 {
     Node *tail = NULL;
-    insert(tail, 1, 1);
-    insert(tail, 2, 2);
-    insert(tail, 3, 3);
-    insert(tail, 2, 5);
+    Node *head = NULL;
+    insert(head, tail, 1, 1);
+    insert(head, tail, 2, 2);
+    insert(head, tail, 3, 3);
+    insert(head, tail, 2, 5);
     print(tail);
     cout<<"tail: "<<tail->data;
     return 0;
