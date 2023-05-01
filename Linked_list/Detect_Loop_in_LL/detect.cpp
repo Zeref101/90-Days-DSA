@@ -163,11 +163,15 @@ int main()
     insertMid(head, 6, 15, tail);
     insertMid(head, 4, 100, tail);
     insertHead(head, 99);
+    tail->next = head->next->next;
+    if(floydDetectLoop(head))
+    {
+        cout<<"There is a loop"<<endl;
+    }
     
-    deleteNode(head, tail, 8);
-    print(head);
-    cout<<"head: "<<head->data<<endl;
-    cout<<"tail: "<<tail->data<<endl;
+    // print(head);
+    // cout<<"head: "<<head->data<<endl;
+    // cout<<"tail: "<<tail->data<<endl;
 
    return 0;
 }
