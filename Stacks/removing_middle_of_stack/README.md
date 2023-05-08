@@ -1,3 +1,5 @@
+# EXPLAINATION
+
 ```cpp
 #include<iostream>
 #include<stack>
@@ -46,8 +48,6 @@ int main()
 }
 
 ```
-
-# EXPLAINATION
 
 * The code begins by including the necessary headers and defining the namespace.
 * The removeMid() function takes three arguments - the stack itself (arr), a counter variable to keep track of the number of elements processed so far(count), and the size of the stack (size).
