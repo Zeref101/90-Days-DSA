@@ -36,11 +36,22 @@ node *createTree(node *root)
     return root;
 }
 
+void preorderTraverse(node *root)
+{
+    if (root == NULL)
+    {
+        return;
+    }
+    cout<<root->data<<endl;
+    preorderTraverse(root->left);
+    preorderTraverse(root->right);
+}
+
 int main()
 {
     node *root = NULL;
-
     root = createTree(root);
-    inorder(root);
+
+    preorderTraverse(root);
     return 0;
 }
