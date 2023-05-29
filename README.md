@@ -16,6 +16,7 @@ Concepts.
 * (i) Arrays 
 * (ii) Linked List 
 * (iii) Stacks and Queues
+* (iv) Binary Trees
 
 ##### Resources
  ###### Arrays 
@@ -29,6 +30,8 @@ Concepts.
   - [Theory](https://www.andrew.cmu.edu/course/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html) - By Andrew Edu
 - [Video Lecture](https://www.youtube.com/watch?v=rHQI4mrJ3cg) - By Kunal Kushwaha
 
+ ###### Binary Trees
+ -[Video Lecture](https://www.youtube.com/watch?v=5NiXlPrLslg&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=67&pp=iAQB) - Love Babbar
 
 Some important Suggestion from Nishant Chahar > *From Now, start giving contests and learn the new concepts that come along the way.
                          You might not do well in the first few but it’s okay! Just keep learning and keep growing.*
