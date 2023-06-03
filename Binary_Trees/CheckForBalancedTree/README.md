@@ -2,12 +2,7 @@
 
 Given a binary tree, find if it is height balanced or not.
 A tree is height balanced if difference between heights of left and right subtrees is not more than one for all nodes of tree.
-(for all nodes of tree =>  height of each node is the same for all nodes in the tree, and the tree is not imbalanced with respect to its depth.
-       8
-     /   \
-    4     12
-   / \   / \
-  2   6 10  14       )
+(for all nodes of tree =>  height of each node is the same for all nodes in the tree, and the tree is not imbalanced with respect to its depth.)
 
 ## EXPLAINATION
 
