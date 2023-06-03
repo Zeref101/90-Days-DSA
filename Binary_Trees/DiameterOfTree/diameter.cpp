@@ -46,9 +46,9 @@ int height(node* root, int &ans)
 
     int left = height(root->left, ans);
     int right = height(root->right, ans);
-    ans = max(ans, 1+left+right);
+    ans = max(ans, left+right);
 
-    return 1+max(left,right);
+    return 1 + max(left,right);
 }
 
 int main()
@@ -58,6 +58,6 @@ int main()
 
     int ans = 0;
     int res = height(root, ans);
-    cout<<ans-1<<endl;
+    cout<<ans<<endl;
     return 0;
 }
