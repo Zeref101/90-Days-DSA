@@ -1,3 +1,8 @@
+# QUESTION
+Given a binary tree, the task is to check for every node, its value is equal to the sum of values of its immediate left and right child. For NULL values, consider the value to be 0.
+
+## EXPLAINATION
+
 ```cpp
 void changeTree(BinaryTreeNode<int>* root) {
     if (root == NULL) {
